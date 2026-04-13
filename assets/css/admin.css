@@ -1,0 +1,272 @@
+/**
+ * Izzygld Entry Export for Gravity Forms - Admin Styles
+ *
+ * @package Izzygld_Entry_Export
+ */
+
+/* ==========================================================================
+   Management Page
+   ========================================================================== */
+
+.izzygld-eee-management {
+    max-width: 1200px;
+}
+
+.izzygld-eee-management h1 {
+    margin-bottom: 20px;
+}
+
+.izzygld-eee-management h2 {
+    font-size: 1.3em;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ==========================================================================
+   Generate Form
+   ========================================================================== */
+
+.izzygld-eee-form .form-table th {
+    width: 180px;
+    padding-top: 15px;
+}
+
+.izzygld-eee-form .form-table td {
+    padding-top: 10px;
+}
+
+.izzygld-eee-form select,
+.izzygld-eee-form input[type="text"],
+.izzygld-eee-form input[type="date"] {
+    max-width: 100%;
+}
+
+/* ==========================================================================
+   Field Selection
+   ========================================================================== */
+
+.izzygld-eee-field-selection {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fafafa;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.izzygld-eee-select-all {
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.izzygld-eee-fields-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 8px;
+}
+
+.izzygld-eee-field-item {
+    display: block;
+    padding: 5px 8px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.izzygld-eee-field-item:hover {
+    background: #f0f6fc;
+}
+
+.izzygld-eee-field-item.not-allowed {
+    background: #f5f5f5;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.izzygld-eee-field-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.izzygld-eee-not-allowed {
+    font-size: 11px;
+    color: #999;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   Result Section
+   ========================================================================== */
+
+.izzygld-eee-result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ecf7ed;
+    border: 1px solid #46b450;
+    border-radius: 4px;
+}
+
+.izzygld-eee-result.hidden {
+    display: none;
+}
+
+.izzygld-eee-result h3 {
+    margin-top: 0;
+    color: #32853a;
+}
+
+.izzygld-eee-url-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.izzygld-eee-url-container input[type="text"] {
+    flex: 1;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.izzygld-eee-url-container .button {
+    white-space: nowrap;
+}
+
+/* ==========================================================================
+   Links Table
+   ========================================================================== */
+
+.izzygld-eee-links-section {
+    margin-top: 30px;
+}
+
+#izzygld-eee-links-table {
+    margin-top: 15px;
+}
+
+#izzygld-eee-links-table th,
+#izzygld-eee-links-table td {
+    vertical-align: middle;
+}
+
+#izzygld-eee-links-table .button-small {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Form Settings Page
+   ========================================================================== */
+
+.izzygld-eee-form-settings-note {
+    background: #fff8e5;
+    border-left: 4px solid #ffb900;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+/* ==========================================================================
+   Plugin Settings Page
+   ========================================================================== */
+
+.izzygld-eee-settings-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+}
+
+.izzygld-eee-settings-section h2 {
+    margin: 0;
+    padding: 15px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.izzygld-eee-settings-section .form-table {
+    margin: 0;
+}
+
+/* Secret key field */
+input[name="_gform_setting_secret_key"] {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+input[name="_gform_setting_secret_key"] + button {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media screen and (max-width: 782px) {
+    .izzygld-eee-form .form-table th {
+        width: auto;
+        padding-bottom: 0;
+    }
+
+    .izzygld-eee-fields-list {
+        grid-template-columns: 1fr;
+    }
+
+    .izzygld-eee-url-container {
+        flex-direction: column;
+    }
+
+    .izzygld-eee-url-container input[type="text"] {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Notices
+   ========================================================================== */
+
+.izzygld-eee-notice {
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-left-width: 4px;
+    border-left-style: solid;
+}
+
+.izzygld-eee-notice-success {
+    background: #ecf7ed;
+    border-color: #46b450;
+}
+
+.izzygld-eee-notice-warning {
+    background: #fff8e5;
+    border-color: #ffb900;
+}
+
+.izzygld-eee-notice-error {
+    background: #fbeaea;
+    border-color: #dc3232;
+}
+
+/* ==========================================================================
+   Entry List Integration
+   ========================================================================== */
+
+.izzygld-eee-entry-export-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.izzygld-eee-entry-export-link:hover {
+    color: #00a0d2;
+}
+
+.izzygld-eee-entry-export-link .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
